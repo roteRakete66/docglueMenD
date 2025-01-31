@@ -70,7 +70,7 @@
                 if not translator.translate(*translate_params):
 
     ```
-    > Gleichzeitiges Übersetzen und hecken ob das geklappt hat.
+    > Gleichzeitiges Übersetzen und checken ob das geklappt hat.
 
 16. ```python
                     return

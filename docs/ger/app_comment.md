@@ -12,7 +12,7 @@ Dann die Markdown Datei erstellen.
 Wenn es 5 Parameter sind wird übersetzt.
 Die Dateiendungen und dazugehörigen Programmiersprachen werden gesynct.
 
-Gleichzeitiges Übersetzen und hecken ob das geklappt hat.
+Gleichzeitiges Übersetzen und checken ob das geklappt hat.
 
 
 Dann die Markdown Datei erstellen.
