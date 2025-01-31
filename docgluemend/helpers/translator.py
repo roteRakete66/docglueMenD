@@ -8,7 +8,7 @@ def translate(source_file_path, out_file_path, source_lang):
     try:
         with (
             open(source_file_path, "r") as source_file,
-            open(out_file_path, "w") as out_file,
+            open(out_file_path, "w", encoding="utf-8") as out_file,
         ):
             lines_count = glue.lines_count(source_file)
             for line_count, comment in enumerate(source_file, start=1):
