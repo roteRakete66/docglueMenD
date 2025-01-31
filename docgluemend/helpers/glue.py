@@ -1,9 +1,7 @@
 from helpers import languages, parameter_handler
 
 FOOT = "    - <sub> This doc-view was created by [docglueMenD](https://github.com/roteRakete66/docglueMenD)</sub>\n"
-WRONG_USAGE = (
-    "Usage: python app.py <code_file> <doc_file> <out_file> [language en_doc_out_file]"
-)
+WRONG_USAGE = "Usage: python app.py <code_file> <comment_file> <doc_file> [language en_comment_out_file]"
 
 
 def together(code_file_path, doc_file_path, out_file_path):
