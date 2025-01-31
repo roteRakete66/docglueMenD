@@ -46,7 +46,7 @@ def both(code_file, language, code_lines_count, doc_file, doc_lines_count, out_f
         return
     to_position(code_file, doc_lines_count)
     for line_count, code_line in enumerate(code_file, start=doc_lines_count + 1):
-        out_file.write(line(line_count, code_line, "\n"))
+        out_file.write(line(line_count, code_line, language, "\n"))
 
 
 def line(line_count, code_line, language, doc_line):
