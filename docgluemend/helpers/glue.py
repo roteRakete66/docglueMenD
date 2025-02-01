@@ -67,8 +67,8 @@ def to_position(file, line_count):
 
 
 def body_line(line_count, line, language):
-    return f"{line_count}. ```{language}\n    {line}\n    ```\n"
+    return f"{line_count}. ```{language}\n    {line}    ```\n"
 
 
 def body_doc_line(line_count, code_line, doc_line):
-    return f"    > {doc_line}\n"
+    return f"    > {doc_line}"
