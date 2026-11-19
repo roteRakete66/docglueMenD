@@ -5,7 +5,7 @@
     
     ```
 3. ```python
-    from helpers import glue, languages, translator
+    from docgluemend.helpers import glue, languages, translator
     ```
 4. ```python
     
