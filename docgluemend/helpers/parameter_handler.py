@@ -1,14 +1,5 @@
 # parameter_handler.py
 import os
-import sys
-
-
-def get_parameters():
-    parameter_count = len(sys.argv) - 1
-    for i, arg in enumerate(sys.argv):
-        print(f"Parameter {i}: {arg}")
-
-    return parameter_count
 
 
 def permission(file_path):
