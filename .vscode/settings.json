@@ -2,7 +2,12 @@
     "cSpell.words": [
         "Consolas",
         "docgluemend",
-        "pyyaml"
+        "pycache",
+        "pytest",
+        "pyyaml",
+        "qodo",
+        "sdist",
+        "venv"
     ],
     "python.analysis.extraPaths": [
         "./docgluemend"
