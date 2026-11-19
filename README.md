@@ -41,7 +41,7 @@ To use **docglueMenD**, follow these steps:
 
 To generate a Markdown file from your code and your comment, run the following command:
 ```bash
-poetry run python docgluemend\app.py <code_file> <comment_file> <doc_file> [language en_comment_out_file]
+poetry run docgluemend <code_file> <comment_file> <doc_file> [language en_comment_out_file]
 ```
 If you do not specify a language, the files are simply merged (glued).
 
@@ -60,12 +60,12 @@ It is therefore normal to have several empty lines. Ensure that your IDE does no
 ### Usage
 
 ```bash
-poetry run python docgluemend\app.py code.py comments.md doc.md 
+poetry run docgluemend code.py comments.md doc.md 
 ```
 For just *glue*
 
 ```bash
-poetry run python docgluemend\app.py code.py comments.md en_doc.md german en_comments.md
+poetry run docgluemend code.py comments.md en_doc.md german en_comments.md
 ```
 To create the translated files from German .
 
