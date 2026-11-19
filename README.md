@@ -1,19 +1,25 @@
 # docglueMenD
 
-**docglueMenD** is a Python-based tool designed to create Markdown files with syntax-highlighted code lines and associated comments. It is particularly useful for developers who want to document their code in a clean and organized way.
+> **🚧 Work in Progress (WIP):** This project is currently under active development and refactoring. Core single-file merging and translation work as described below, while automated project-wide workflows and CLI improvements are actively being built.
+
+**docglueMenD** is a Python-based CLI tool designed to create Markdown files with syntax-highlighted code lines and associated comments. It keeps inline explanations separate from your actual source code so your codebase stays clean and readable.
 
 ## Features
 
 - **Syntax Highlighting**: Automatically detects the programming language based on file extensions and applies syntax highlighting in Markdown.
 - **Separate Comment Files**: Keeps comments in a separate file, ensuring your code remains clean and uncluttered.
-- **Translation Support**: Integrates with [deep_translator](https://github.com/nidhaloff/deep-translator) to translate comments from your chosen language into english.
+- **Translation Support**: Integrates with [deep_translator](https://github.com/nidhaloff/deep-translator) to translate comments from your chosen language into English.
 - **Cross-Platform**: Works on Windows, macOS, and Linux.
 - **Easy to Use**: Simple command-line interface for generating Markdown files.
 
-## Agenda
+## Roadmap & Planned Features
 
-### Planned Feature(s)
-- Automatically generate a doc folder with the same tree as the project and create all doc files with one command.
+The following features are currently planned and in progress:
+
+- **Mirror Directory Generation (`create_structure`)**: Run `docgluemend create_structure [target_dir]` to automatically generate a mirrored directory tree of empty comment files inside `comments/` (defaults to the current directory if no path is provided).
+- **Ignore Rules (`.glueignore`)**: Support a `.glueignore` file (similar to `.gitignore`) to exclude specific folders, files, or patterns when generating the comment structure.
+- **Zero-Config Project Aggregation (`docgluemend`)**: Running `docgluemend` without arguments will automatically detect a `comments/` directory (including language subdirectories like `en/`, `ger/`, etc.) and generate all corresponding Markdown outputs into `gluements/`.
+- **Simplified Single-File Mode**: Run `docgluemend <code_file>` to automatically resolve the matching file in `comments/` and output the merged result to `gluements/` without manually specifying all file paths.
 
 ## Installation
 
