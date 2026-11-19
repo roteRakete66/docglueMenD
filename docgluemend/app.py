@@ -1,6 +1,6 @@
 import sys
 
-from helpers import glue, languages, translator
+from docgluemend.helpers import glue, languages, translator
 
 
 def main():

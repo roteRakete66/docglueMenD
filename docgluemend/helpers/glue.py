@@ -1,4 +1,4 @@
-from helpers import languages, parameter_handler
+from docgluemend.helpers import languages, parameter_handler
 
 FOOT = "    - <sub> This doc-view was created by [docglueMenD](https://github.com/roteRakete66/docglueMenD)</sub>\n"
 WRONG_USAGE = "Usage: python app.py <code_file> <comment_file> <doc_file> [language en_comment_out_file]"
@@ -31,7 +31,7 @@ def together(code_file_path, doc_file_path, out_file_path):
                 out_file,
             )
             out_file.write(FOOT)
-    except IOError as e:
+    except OSError as e:
         print(f"An error occurred: {e}")
 
 

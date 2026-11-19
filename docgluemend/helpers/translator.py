@@ -1,5 +1,6 @@
 from deep_translator import GoogleTranslator
-from helpers import glue, parameter_handler
+
+from docgluemend.helpers import glue, parameter_handler
 
 
 def translate(source_file_path, out_file_path, source_lang):
@@ -19,6 +20,6 @@ def translate(source_file_path, out_file_path, source_lang):
                 if lines_count > line_count:
                     out_file.write("\n")
 
-    except IOError as e:
+    except OSError as e:
         print(f"An error occurred: {e}")
     return True

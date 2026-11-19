@@ -2,7 +2,8 @@ from pathlib import Path
 
 import requests
 import yaml
-from helpers import metadata
+
+from docgluemend.helpers import metadata
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 CONFIG_DIR.mkdir(parents=True, exist_ok=True)

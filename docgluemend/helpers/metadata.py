@@ -1,7 +1,8 @@
 from pathlib import Path
 
 import yaml
-from helpers import languages
+
+from docgluemend.helpers import languages
 
 
 def save(etag):

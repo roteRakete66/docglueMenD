@@ -1,7 +1,8 @@
 {
     "cSpell.words": [
         "Consolas",
-        "docgluemend"
+        "docgluemend",
+        "pyyaml"
     ],
     "python.analysis.extraPaths": [
         "./docgluemend"
